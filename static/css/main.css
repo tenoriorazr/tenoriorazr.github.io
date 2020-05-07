@@ -10,13 +10,13 @@ body {
   color: #232323;
   //color: #666;
 }
-.author-name a{
+.author-name#a{
   font-family: Arvo, sans-serif;
   font-size: 50px;
   font-weight: 300;
   background-color: black;
   color: white;
-  line-height: 1.3em;
+  //line-height: 1.3em;
   border-bottom: none;
   margin-top: 0;
 }
