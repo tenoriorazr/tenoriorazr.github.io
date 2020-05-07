@@ -11,7 +11,13 @@ body {
   //color: #666;
 }
 .author-name {
-  font-size:54px;
+  font-family: Arvo, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.3em;
+  border-bottom: none;
+  margin-top: 0;
+  color: white;
   background-color: black;
 }
 hr {
@@ -177,4 +183,25 @@ div.col-sm-3 div.profile-about {
   div.col-sm-3 {
     margin-top: 30px;
   }
+}
+.blinking_cursor {
+  opacity: 0;
+  animation: cursor 1s infinite;
+}
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
