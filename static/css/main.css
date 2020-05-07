@@ -36,12 +36,12 @@ h2, h3 {
 }
 a, a:link, a:active {
   text-decoration: none;
-  color: black;
+  color: #C30000;
   //color: #3fa757;
 }
 a:hover {
-  color: #d10f42;
-  //color: #B3B3B3;
+  //color: #d10f42;
+  color: #B3B3B3;
   text-decoration: underline;
 }
 
