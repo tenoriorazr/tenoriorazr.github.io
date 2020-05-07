@@ -10,6 +10,9 @@ body {
   color: #232323;
   //color: #666;
 }
+.author-name {
+  font-size:54px;
+}
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
