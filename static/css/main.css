@@ -16,7 +16,7 @@ body {
   font-weight: 300;
   background-color: black;
 }
-.author-name a{
+.author-name.a{
   color: white;
   line-height: 1.3em;
   border-bottom: none;
