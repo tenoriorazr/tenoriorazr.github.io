@@ -10,7 +10,7 @@ body {
   color: #232323;
   //color: #666;
 }
-.author-name titulo {
+#titulo.author-name {
   font-family: Arvo, sans-serif;
   font-size: 50px;
   font-weight: 300;
