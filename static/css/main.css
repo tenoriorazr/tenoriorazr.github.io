@@ -12,6 +12,7 @@ body {
 }
 .author-name {
   font-size:54px;
+  background-color: black;
 }
 hr {
   margin-top: 20px;
