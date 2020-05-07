@@ -1,6 +1,9 @@
-layout: page
-title: "Sistemas de Firewall"
-date: 2020-04-06 04:40:00 -0000
+---
+layout: post
+title:  "Sistemas de Firewall"
+date:   2020-04-06 04:40:00 -0700
+#categories: [bash]
+---
 
 # Capítulo 17
 ## Sistemas de Firewall
