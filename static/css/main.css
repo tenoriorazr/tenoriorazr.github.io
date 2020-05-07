@@ -19,6 +19,7 @@ body {
   border-bottom: none;
   //margin-top: 0;
   text-decoration: none;
+  padding: 2px 80px 2px 10px;
 }
 hr {
   margin-top: 20px;
