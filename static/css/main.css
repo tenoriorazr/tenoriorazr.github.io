@@ -3,9 +3,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   //font-family: "Roboto Condensed", Arial, sans-serif;
   background: url("/static/img/subtle_dots.png");
+  //background-color: #FBFAF7;
   line-height: 1.5em;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   color: #232323;
   //color: #666;
 }
@@ -24,7 +25,7 @@ span.time, span.categories {
 h1, h2, h3 {
   //color: black;	
   //color: #696969;
-  font-weight: normal;
+  font-weight: bold;
   font-family: Arvo;
 }
 h1 {
@@ -47,7 +48,7 @@ a:hover {
 
 /* Layout */
 .main-layout {
-  background: #fff;
+  background: #FBFAF7;
 }
 .sidebar-nav {
   margin: 0;
