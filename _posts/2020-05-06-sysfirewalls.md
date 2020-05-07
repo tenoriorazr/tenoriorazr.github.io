@@ -2,7 +2,7 @@
 layout: post
 title:  "Sistemas de Firewall"
 date:   2020-05-06 04:40:00 -0300
-#categories: [bash]
+categories: [security]
 ---
 
 # Capítulo 17
