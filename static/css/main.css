@@ -25,7 +25,7 @@ span.time, span.categories {
 h1, h2, h3 {
   //color: black;	
   //color: #696969;
-  font-weight: bold;
+  font-weight: normal;
   font-family: Arvo;
 }
 h1 {
