@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700,400italic");
 body {
   font-family: "Roboto Condensed", Arial, sans-serif;
   background: url("/static/img/subtle_dots.png");
@@ -21,6 +22,7 @@ span.time, span.categories {
 h1, h2, h3 {
   color: #696969;
   font-weight: normal;
+  font-family: Arvo;
 }
 h1 {
   margin-bottom: 10px;
@@ -31,10 +33,12 @@ h2, h3 {
 }
 a, a:link, a:active {
   text-decoration: none;
-  color: #3fa757;
+  color: black;
+  //color: #3fa757;
 }
 a:hover {
-  color: #B3B3B3;
+  color: #d10f42;
+  //color: #B3B3B3;
   text-decoration: underline;
 }
 
