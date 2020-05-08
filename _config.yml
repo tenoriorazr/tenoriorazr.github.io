@@ -1,9 +1,9 @@
 title: 01 Lines
 description: Blog
-author: evt
-github: https://github.com/ttasks
-about: I'm Programmer for Python.
-disqus_shortname: evt
+author: evttenorio
+github: https://github.com/evttenorio
+about: Computer student.
+disqus_shortname: evttenorio
 google_analytics: brr-XXXXXXXX-Y
 
 enableTags: true
@@ -18,7 +18,7 @@ social:
     - icon: fa-linkedin
       link: "#"
     - icon: fa-github
-      link: "https://github.com/ttasks"
+      link: "https://github.com/evttenorio"
 #    - icon: fa-facebook
 #      link: "#"
 #    - icon: fa-twitter
@@ -28,7 +28,7 @@ social:
 
 
 share:
-  twitter_username: github.io
+  twitter_username: d85421dtenorio
   fb_appid: 1749788565247320xxxx
 
 urls:
@@ -39,7 +39,7 @@ urls:
  #   - text: XML Feed
  #     url: /feed.xml
 
-url: "https://ttasks.github.io"
+url: "https://tenoriorazr.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
