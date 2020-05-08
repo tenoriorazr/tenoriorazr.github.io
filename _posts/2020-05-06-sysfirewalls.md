@@ -5,7 +5,7 @@ date:   2020-05-06 04:40:00 -0300
 categories: [security, server]
 ---
 
-[![Firewall](https://image.flaticon.com/icons/png/128/2059/2059030.png)](https://blog.evttenorio.com/sysfirewall)
+[![Firewall](https://image.flaticon.com/icons/png/128/2059/2059030.png)](https://blog.evttenorio.com/security/server/2020/05/06/sysfirewalls.html)
 
 ## 17.1 Conceitos básicos em sistemas de firewall
 Sistemas de firewalls se desajustados podem causar interferências indesejadas no tráfego.
