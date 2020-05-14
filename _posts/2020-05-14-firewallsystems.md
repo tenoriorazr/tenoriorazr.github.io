@@ -7,6 +7,7 @@ categories: [security, server]
 
 _"O político só tem dois pensamentos, ou você é instrumento ou você é adversário." - Emílio Surita._
 
+
 [![Firewall](https://image.flaticon.com/icons/png/128/2059/2059030.png)](https://blog.evttenorio.com/security/server/2020/05/06/sysfirewalls.html)
 
 ## Conceitos básicos
@@ -47,8 +48,6 @@ Em caso de intrusão o invasor deverá ficar contido na DMZ, sem possibilidade d
   
 > **Atenção!** IPTABLES não é firewall.
 
-> Elementos de Firewall é um recurso que faz algum tipo de análise, registro e/ou bloqueio. Atua nas camadas 2, 3, 4 e 7, poredá haver atuação nas camadas 5 e 6.
-
 ### Netfilter - Filtro de Pacotes
 Netfilter é um elemento de firewall atuante na rede que pode bloquear ou manipular tipos de tráfegos. O ```iptables``` é o comando que manipula o netfilter.
 
@@ -59,6 +58,7 @@ Netfilter entende as camadas 3 e 4 - OSI, manipulando recursos dos protocolos de
 Deve-se usar dois elementos de firewall em uma máquina se não houver alternativa. Exemplo de caso: Implementação do Proxy transparente, quando deverá existir um proxu e um filtro de pacotes para fazer desvio de porta.
 
 ## Elementos de Firewall
+Elementos de Firewall é um recurso que faz algum tipo de análise, registro e/ou bloqueio. Atua nas camadas 2, 3, 4 e 7, poderá haver atuação nas camadas 5 e 6.
 
 ### Filtro de pacotes
 - Filtro de pacotes não analisa a camada 7.
