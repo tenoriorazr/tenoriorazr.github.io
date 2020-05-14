@@ -5,6 +5,8 @@ date:   2020-05-06 06:30:00 -0300
 categories: [security, server]
 ---
 
+_"O político só tem dois pensamentos, ou você é instrumento ou você é adversário." - Emílio Surita._
+
 [![Firewall](https://image.flaticon.com/icons/png/128/2059/2059030.png)](https://blog.evttenorio.com/security/server/2020/05/06/sysfirewalls.html)
 
 ## Conceitos básicos
@@ -43,7 +45,8 @@ Em caso de intrusão o invasor deverá ficar contido na DMZ, sem possibilidade d
   - O sistema de firewall deverá ser composto de diversos elementos.
   - O sistema de firewall deverá ser imune à invasão.
   
-> **Atenção!** Usuário Linux, IPTABLES não é firewall
+> **Atenção!** IPTABLES não é firewall.
+
 > Elementos de Firewall é um recurso que faz algum tipo de análise, registro e/ou bloqueio. Atua nas camadas 2, 3, 4 e 7, poredá haver atuação nas camadas 5 e 6.
 
 ### Netfilter - Filtro de Pacotes
@@ -64,7 +67,7 @@ Deve-se usar dois elementos de firewall em uma máquina se não houver alternati
 - Podem entender elementos da camada 2, como endereço MAC
 - São como guardas de transito que permitem a passagem de carros(pacotes) que satisfaçam pré-requisitos, como direção do tráfego.
 
-Sobre [iptables](https://blog.evttenorio.com/)
+Sobre [Iptables](https://blog.evttenorio.com/)
 
 ### Filtro de estados
 Analisam estados das conexões e permitem que o tráfego, alem de direção tenha sentido.
@@ -76,6 +79,7 @@ Exemplo de estados utilizados pelo netfilter do kernel Linux:
 
 ### Filtro de enlace
 - Atuam na camada 2.
+- Trata de endereços MAC, Tráfego VLANs e entre outros itens correlatos.
 - Similares ao filtro de pacotes.
 - ebtables.
 ```
@@ -84,7 +88,12 @@ ebtables -A FORWARD -s 01:02:03:04:a1:06 -j DROP
 ```
 
 ### Proxies
-
+- Elemento intermediário e que atua como cliente e servidor.
+- Atuam diretamente na camada 7, entendem a camada 3 para selecionar o tráfego-alvo.
+- Existem proxies para HTTP, FTP, SMTP, DNS, etc.
+- Proxy não acelera a internet. Por ocasião de consulta a sites, os caches são responsáveis pela aceleração. Squid é um exemplo de proxy que oferece HTTP com cache.
+- Forward Proxy: O cliente acessa vários servidores diferentes simultaneamente. Exemplo: Usuários de redes internas que precisam acessar sistes da Internet, nesse caso implementa-se um proxy HTTP de forward com cache.
+- Reverse Proxy: Vários clientes precisam acessar um determinado servidor. O servidor de rede deve ter um servidor de proxy reverso a frente de clientes.
 
 ### [---]
 
