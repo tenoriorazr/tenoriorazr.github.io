@@ -5,7 +5,7 @@ date:   2020-05-16 02:40:00 -0300
 categories: [linux, scripts]
 ---
 
-_"A vida é feita de escolhas e nesse momento escolho sair." - Nelson Teich_
+_"A vida é feita de escolhas e nesse momento escolho sair." - Nelson Teich._
 
 ### Emojis with version minimum Ubuntu installation + Openbox 
 
