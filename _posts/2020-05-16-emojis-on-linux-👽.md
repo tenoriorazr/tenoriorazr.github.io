@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on emojis and linux"
+title:  "Notes on emojis and linux 👽"
 date:   2020-05-16 02:40:00 -0300
 categories: [linux, scripts]
 ---
@@ -29,6 +29,6 @@ or
 # echo $'\U1F47D'
 👽
  ```
-![that's all, folks!](https://qph.fs.quoracdn.net/main-qimg-0091a2fc16180ba9a3b0b0e74678ca1f)
+![thatsallfolks](https://qph.fs.quoracdn.net/main-qimg-0091a2fc16180ba9a3b0b0e74678ca1f)
 
 Next steps: more information in forums or documentation to do update this post. Logs and scripts will no longer be the same.
