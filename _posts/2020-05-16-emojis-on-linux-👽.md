@@ -4,6 +4,9 @@ title:  "Notes on emojis and linux 👽"
 date:   2020-05-16 02:40:00 -0300
 categories: [linux, scripts]
 ---
+
+_"A vida é feita de escolhas e nesse momento escolho sair." - Nelson Teich_
+
 ### Emojis with version minimum Ubuntu installation + Openbox 
 
 I wanted to print emojis on tty Linux, but it wasn't possible. At the moment, what know is some things about unicode, fonts and unicode code point.
