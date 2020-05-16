@@ -172,7 +172,7 @@ div.col-sm-3 div.profile-about {
 .content img {
   max-width: 100%
 }
-
+img[thatsallfolks] {width: 200px}
 /* Responsive Conditional */
 @media (min-width: 1024px) {
   .fixed-condition {
