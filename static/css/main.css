@@ -4,7 +4,7 @@ body {
   //font-family: "Roboto Condensed", Arial, sans-serif;
   background: url("/static/img/subtle_dots.png");
   //background-color: #FBFAF7;
-  line-height: 1.8em;
+  line-height: 1.6em;
   font-weight: 300;
   font-size: 14px;
   color: #232323;
@@ -44,7 +44,7 @@ h1 {
   font-size: 30px;
 }
 h2, h3 {
-  padding-top: 15px;
+  padding-top: 20px;
   margin-bottom: 5px;
 }
 h2 {font-size: 24px;}
