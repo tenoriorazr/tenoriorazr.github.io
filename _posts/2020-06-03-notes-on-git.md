@@ -7,8 +7,8 @@ categories: [git]
 
 [EM MANUTENÇÃO]
 
-Explicações com comandos úteis do git.
-Útil para utilizar git com github ou gitlab.
+Comandos úteis do git.
+Útil para usar git com github ou gitlab.
 
 **First, go to github/gitlab and create repository.** 
 - Create a New Repository/Project. 
