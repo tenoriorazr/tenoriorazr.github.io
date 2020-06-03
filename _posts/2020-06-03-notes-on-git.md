@@ -18,7 +18,7 @@ Explicações com comandos úteis do git.
 ```
 git config --global user.name "Myname"
 git config --global user.mail "myemail@emails.com"
-git config --global core.editor "Myname"
+git config --global core.editor "editor(vim, vi, etc)"
 ```
 
 _Show configs_
@@ -33,7 +33,7 @@ git config user.name
  ```
 
 **Connecting to github/gitlab with SSH**
-- github
+- [github](https://help.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh)
 - gitlab
 
 **Link you project with repository on github/gitlab** 
