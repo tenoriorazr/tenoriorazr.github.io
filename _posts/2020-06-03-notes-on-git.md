@@ -1,42 +1,40 @@
 ---
 layout: post
-title:  "Notes on git"
+title:  "Notas sobre git"
 date:   2020-06-03 08:30:00 -0300
 categories: [git]
 ---
 
-[EM MANUTENÇÃO]
+* O básico do git *
+Comandos úteis do git para já começar usá-lo.
 
-Comandos úteis do git.
-Útil para usar git com github ou gitlab.
+**Criar o repositório.** 
+- Criar em New Repository/Project. 
+- Adicionar nome e descrição.
 
-**First, go to github/gitlab and create repository.** 
-- Create a New Repository/Project. 
-- Add name and description.
-
-**Initial git configuration**
+**Configuraçao Inicial**
 ```
 git config --global user.name "Myname"
 git config --global user.mail "myemail@emails.com"
 git config --global core.editor "editor(vim, vi, etc)"
 ```
 
-_Show configs_
+_Exibindo configurações_
 ```
 git config --list
 git config user.name
 ```
 
-**Transforms current directory into git project and adds ".git"**
+**Fazer do diretório atual um projeto git e adicione ".git"**
  ```
  git init
  ```
 
-**Connecting to github/gitlab with SSH**
+**Conectando github/gitlab com SSH**
 - [github](https://help.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh)
 - gitlab
 
-**Link you project with repository on github/gitlab** 
+**Linkar projeto com o criando no github/gitlab** 
 ```
 git remote add origin https://github.com/user/repo.git.
 ```
@@ -44,21 +42,21 @@ git remote add origin https://github.com/user/repo.git.
 git remote -v
 ```
 
-**If necessary, not to upload files in github/gitlab**
+**Se necessário não fazer uploads de arquivos ou diretórios no github/gitlab**
 ```
 .gitignore 
 ```
 
-**Up files to github/gitlab.**
+**Upload do projeto**
 ```
 git add .
 ```
 
-**Create a initial commit** 
+**Criando commit inicial** 
 ```
 git commit -m "my first commit"
 ``` 
-**And after... push**
+**Publicando projeto local junto com todos os commits e objetos internos**
 ```
 git push -u origin master
 ```
@@ -95,7 +93,7 @@ git reset HEAD filename
 
 ## Branch
 
-**Create branch**
+**Criando branch**
 ```
 git checkout -b "Branch01"
 ```
@@ -126,7 +124,7 @@ git rebase branch_name
 Commits são registrados de maneira linear.
 
 
-## Operations commits
+## Operando commits
 
 **Git stash**
 ```
@@ -135,6 +133,7 @@ git stash apply
 git stash list
 ```
 Cria estados WIP para guardar commits que poderão ser aplicados posteriormente
+Stashes não são transferidos para o servidor quando você envia por push..
 
 **Git revert**
 ```
@@ -143,7 +142,7 @@ git revert examplehash3239j423f34230482340a
 Para reveter commits que gerou problemas em produção. Nao perde as mudanças como no comando `git reset`.
 
 
-## Other commands
+## Outros comandos
 **Alias**
 ```
 git config --global alias.sx status
