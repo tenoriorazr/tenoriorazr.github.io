@@ -5,8 +5,9 @@ date:   2020-06-03 08:30:00 -0300
 categories: [git]
 ---
 
-* O básico do git *
-Comandos úteis do git para já começar usá-lo.
+# O básico do git 
+Comandos úteis do git para começar e/ou lembrar. 
+
 
 **Criar o repositório.** 
 - Criar em New Repository/Project. 
