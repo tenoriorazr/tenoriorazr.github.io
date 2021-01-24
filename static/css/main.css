@@ -105,6 +105,7 @@ footer {
 }
 div.post-content .btn-tags {
   margin-bottom: 3px;
+  text-align: justify;
 }
 
 /* Left column */
