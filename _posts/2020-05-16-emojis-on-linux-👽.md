@@ -17,7 +17,7 @@ Iniciei startx e no bash exibi as famosas carinhas tendo em mãos:
 
 - Qualquer [lista](https://unicode.org/emoji/charts/full-emoji-list.html) de emojis
 - Pacote _Noto Color Emoji_ instalado (Para exibir colorido)
-- Comandos "printf" e 'echo' com algum código unicode e/ou Sequências de escape.
+- Comandos `printf` e `echo` com algum código unicode e/ou Sequências de escape.
 
 
 Resultado:
