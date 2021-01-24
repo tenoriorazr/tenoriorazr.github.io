@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notas sobre Sistemas de Firewall [pt-br]"
+title:  "Notas sobre Sistemas de Firewall"
 date:   2020-05-06 06:30:00 -0300
 categories: [security, server]
 ---
