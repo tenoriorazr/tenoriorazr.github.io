@@ -1,8 +1,8 @@
-title: 01 Lines
+title: hello world
 description: Blog
 author: evttenorio
 #github: https://github.com/evttenorio
-about: Computer student.
+about: Estudade de Sistemas de Informação tentando falar sobre Linux e Python, ou qualquer coisa do tipo. 👨‍💻 👾	
 disqus_shortname: evttenorio
 google_analytics: brr-XXXXXXXX-Y
 
@@ -18,7 +18,7 @@ social:
     - icon: fa-linkedin
       link: "#"
     - icon: fa-github
-      link: "https://github.com/evttenorio"
+      link: "#"
 #    - icon: fa-facebook
 #      link: "#"
 #    - icon: fa-twitter
