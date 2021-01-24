@@ -14,6 +14,7 @@ Comandos úteis do git para começar e/ou lembrar.
 - Criar em New Repository/Project. 
 - Adicionar nome e descrição.
 
+&nbsp;
 **Configuraçao Inicial**
 ```
 git config --global user.name "Myname"
@@ -27,15 +28,17 @@ git config --list
 git config user.name
 ```
 
+&nbsp;
 **Fazer do diretório atual um projeto git e adicione ".git"**
  ```
  git init
  ```
-
+&nbsp;
 **Conectando github/gitlab com SSH**
 - [github](https://help.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh)
 - gitlab
 
+&nbsp;
 **Linkar projeto com o criando no github/gitlab** 
 ```
 git remote add origin https://github.com/user/repo.git.
@@ -44,25 +47,31 @@ git remote add origin https://github.com/user/repo.git.
 git remote -v
 ```
 
+&nbsp;
 **Se necessário não fazer uploads de arquivos ou diretórios no github/gitlab**
 ```
 .gitignore 
 ```
 
+&nbsp;
 **Upload do projeto**
 ```
 git add .
 ```
 
+&nbsp;
 **Criando commit inicial** 
 ```
 git commit -m "my first commit"
 ``` 
+
+&nbsp;
 **Publicando projeto local junto com todos os commits e objetos internos**
 ```
 git push -u origin master
 ```
 
+&nbsp;
 ## Logs
 ```
 git log
@@ -70,6 +79,7 @@ git log --decorate
 git log --author="same_author"
 ```
 
+&nbsp;
 **Visualizar autores**
 ```
 git shortlog
@@ -84,15 +94,20 @@ git log --graph
 git show examplehash3239j423f34230482340a
 git diff
 ```
+
+&nbsp;
 **Reseta o arquivo antes de editar**
 ```
 git checkout filename
 ```
+
+&nbsp;
 **Reseta para antes de ter usado o comando `git add`**
 ```
 git reset HEAD filename
 ```
 
+&nbsp;
 ## Branch
 
 **Criando branch**
@@ -100,16 +115,19 @@ git reset HEAD filename
 git checkout -b "Branch01"
 ```
 
+&nbsp;
 **Ver branchs**
 ```
 git branch
 ```
 
+&nbsp;
 **Deletar uma branch**
 ```
 git branch -D "Branch02"
 ```
 
+&nbsp;
 ### União de branchs
 **Merge**
 ```
@@ -119,15 +137,17 @@ Commits são registrados em forma de ciclos para sequênciar mudanças registrad
 
 `git log --graph` para visulizar mudanças.
 
+&nbsp;
 **Rebase**
 ```
 git rebase branch_name
 ```
 Commits são registrados de maneira linear.
 
-
+&nbsp;
 ## Operando commits
 
+&nbsp;
 **Git stash**
 ```
 git stash
@@ -137,14 +157,17 @@ git stash list
 Cria estados WIP para guardar commits que poderão ser aplicados posteriormente
 Stashes não são transferidos para o servidor quando você envia por push..
 
+&nbsp;
 **Git revert**
 ```
 git revert examplehash3239j423f34230482340a
 ```
 Para reveter commits que gerou problemas em produção. Nao perde as mudanças como no comando `git reset`.
 
-
+&nbsp;
 ## Outros comandos
+
+&nbsp;
 **Alias**
 ```
 git config --global alias.sx status
@@ -152,6 +175,7 @@ git sx
 ```
 sx passa a ser o alias para o comando `git status`.
 
+&nbsp;
 **Git Tag**
 ```
 git tag -a "anotação" -m "descrição da tag"
