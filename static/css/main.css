@@ -79,7 +79,7 @@ a:hover {
 }
 
 /* Content */
-div.post-content .post-content{
+div.post-content {
   text-align:justify;
 }
 div.content pre {
@@ -124,6 +124,9 @@ div.col-sm-3 strong {
 div.col-sm-3 div.profile-about {
   margin-top: 10px;
   color: #8C8C8C;
+}
+div.col-sm-8 {
+  text-align:justify;
 }
 
 /* Pagination */
