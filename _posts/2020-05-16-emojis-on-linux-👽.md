@@ -9,14 +9,15 @@ _"A vida é feita de escolhas e nesse momento escolho sair." - Nelson Teich._
 
 ---
 
-Imaginei rodar scripts e ver emojis indicando alguma coisa na tela, nada além de uma saída divertida durante a execução.
+Imaginei executar scripts com emojis indicando alguma coisa, nada além de uma saída diferenciada durante a execução.
+
 obs.: Não é possível exibir emojis no tty. 
 
 Iniciei startx e no bash exibi as famosas carinhas tendo em mãos:
 
 - Qualquer [lista](https://unicode.org/emoji/charts/full-emoji-list.html) de emojis
 - Pacote Noto Color Emoji package instalado (Para exibir colorido)
-- printf e/ou echo com algum código unicode e Sequência de escape.
+- Comandos printf e echo com algum código unicode e/ou Sequências de escape.
 
 
 Resultado:
