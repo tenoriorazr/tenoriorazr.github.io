@@ -18,7 +18,7 @@ Iniciei startx e no bash exibi as famosas carinhas tendo em mãos:
 - printf e/ou echo com algum código unicode e Sequência de escape.
 
 &nbsp;
-E esse tem sido o resultado:
+Resultado:
 
 ```
 # printf '\U1F47D\n'
@@ -26,7 +26,7 @@ E esse tem sido o resultado:
 # printf '\360\237\221\275\n'
 👽
 ```
-or
+ou
 ```
 # echo $'\360\237\221\275'
 👽
