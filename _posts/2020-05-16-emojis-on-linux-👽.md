@@ -7,7 +7,7 @@ categories: [linux, scripts]
 
 _"A vida é feita de escolhas e nesse momento escolho sair." - Nelson Teich._
 
-
+&nbsp;
 Imaginei rodar scripts e ver emojis indicando alguma coisa na tela, nada além de uma saída divertida durante a execução.
 Eu queria exibir emojis no tty, mas não foi possível. 
 
@@ -17,6 +17,7 @@ Iniciei startx e no bash exibi as famosas carinhas tendo em mãos:
 - Pacote Noto Color Emoji package instalado (Para exibir colorido)
 - printf e/ou echo com algum código unicode e Sequência de escape.
 
+&nbsp;
 E esse tem sido o resultado:
 
 ```
