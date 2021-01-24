@@ -10,9 +10,8 @@ categories: [docker]
 Comandos úteis do Docker para começar e/ou lembrar.
 
 
-#### Usando o comando docker commit para criar imagens de um container.
-
 ### Criando a imagem
+Usando o comando docker commit para criar imagens de um container.
 ```docker commmit 3b45rbid123 imagemx:versao01```
 
 ### Salvando imagem em um arquivo comprimido
