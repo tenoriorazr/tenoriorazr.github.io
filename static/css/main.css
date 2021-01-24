@@ -79,7 +79,7 @@ a:hover {
 }
 
 /* Content */
-div.post-content {
+div.post-content .post-content{
   text-align:justify;
 }
 div.content pre {
