@@ -8,4 +8,4 @@ Me chamo Everton Tenorio, sou aluno de Sistemas de Informação do IFAL, criei e
 
 > Um projeto pessoal para me ajudar, mas que de alguma forma também ajude outras pessoas.
 
-A príncipio nada além de experiências minhas com alguma tecnologia e no máximo algumas opiniões sobre algo.
+A príncipio nada além de minha experiência com alguma tecnologia e no máximo opiniões sobre algo.
