@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Notes on Firewall Systems [pt-br]"
+title:  "Notas sobre Sistemas de Firewall [pt-br]"
 date:   2020-05-06 06:30:00 -0300
 categories: [security, server]
 ---
 
 _"O político só tem dois pensamentos, ou você é instrumento ou você é adversário." - Emílio Surita._
-
+---
 
 [![Firewall](https://image.flaticon.com/icons/png/128/2059/2059030.png)](https://blog.evttenorio.com/security/server/2020/05/06/sysfirewalls.html)
 
