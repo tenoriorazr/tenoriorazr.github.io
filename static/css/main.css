@@ -79,6 +79,9 @@ a:hover {
 }
 
 /* Content */
+div.content {
+  text-align:justify;
+}
 div.content pre {
   background: #333333;
   padding: 10px;
