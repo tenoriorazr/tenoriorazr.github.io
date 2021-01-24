@@ -1,23 +1,23 @@
 ---
 layout: post
-title:  "Notes on emojis and linux 👽"
+title:  "Notas sobre emojis no bash 👽"
 date:   2020-05-16 02:40:00 -0300
 categories: [linux, scripts]
 ---
 
 _"A vida é feita de escolhas e nesse momento escolho sair." - Nelson Teich._
 
-#### Emojis with Minimal Ubuntu + Openbox 
 
-I wanted to print emojis on tty Linux, but it wasn't possible. At the moment, what know is some things about unicode, fonts and unicode code point.
+Imaginei rodar scripts e ver emojis indicando alguma coisa na tela, nada além de uma saída divertida durante a execução.
+Eu queria exibir emojis no tty, mas não foi possível. 
 
-and printed emojis in bash after starting startx with:
+Iniciei startx e no bash exibi as famosas carinhas tendo em mãos:
 
-- Any [list](https://unicode.org/emoji/charts/full-emoji-list.html) of emojis
-- Noto Color Emoji package installed (I believe it's for color output)
-- printf and echo commands with unicode code point or Octal Escape Sequence
+- Qualquer [lista](https://unicode.org/emoji/charts/full-emoji-list.html)
+- Pacote Noto Color Emoji package instalado (Para exibir colorido)
+- printf e/ou echo com algum código unicode e Sequência de escape.
 
-the result was...
+E esse tem sido o resultado:
 
 ```
 # printf '\U1F47D\n'
@@ -34,4 +34,3 @@ or
  ```
 ![thatsallfolks](https://qph.fs.quoracdn.net/main-qimg-0091a2fc16180ba9a3b0b0e74678ca1f)
 
-Next steps: more information in forums or documentation to do update this post. Logs and scripts will no longer be the same.
