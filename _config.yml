@@ -1,5 +1,5 @@
 title: hello world
-description: Blog
+description: Conteúdos, opiniões e notas sobre Sistemas Operacionais (Linux e Windows) e Python.
 author: evttenorio
 #github: https://github.com/evttenorio
 about: Estudade de Sistemas de Informação tentando falar sobre Linux e Python, ou qualquer coisa do tipo. 👨‍💻 👾	
@@ -7,7 +7,7 @@ disqus_shortname: evttenorio
 google_analytics: brr-XXXXXXXX-Y
 
 enableTags: true
-tagarray: []
+tagarray: [linux, windows, segurança, python]
 
 collections:
   project:
