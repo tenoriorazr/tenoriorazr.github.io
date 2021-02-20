@@ -18,7 +18,7 @@ Demonstração de como fazer transferência de dados via URL com soliticações 
 Métodos/Verbos para endpoints:
 
 |Método ||                   Endpoint                     |
-|:------|-|:---------------------------------------------:|
+|:------|-|:----------------------------------------------|
 |GET    || <https://jsonplaceholder.typicode.com/posts>   |
 |POST   || <https://jsonplaceholder.typicode.com/posts>   |
 |PUT    || <https://jsonplaceholder.typicode.com/posts/1> |
