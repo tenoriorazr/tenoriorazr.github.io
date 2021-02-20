@@ -15,14 +15,15 @@ Demonstração de como fazer transferência de dados via URL com soliticações 
 
 **/posts** significa uma consulta de todos os posts, e o **1** de **/posts/1** representa **/posts/{id}**, logo *ID número 1*.
 
-Métodos/Verbos para endpoints: 
-|Método | Endpoint|
-|-------|---------|
-|GET| https://jsonplaceholder.typicode.com/posts|
-|POST| https://jsonplaceholder.typicode.com/posts|
-|PUT| https://jsonplaceholder.typicode.com/posts/1|
-|PATCH| https://jsonplaceholder.typicode.com/posts/1|
-|DELETE| https://jsonplaceholder.typicode.com/posts/1|
+Métodos/Verbos para endpoints:
+
+|Método | Endpoint                                    |
+|-------|---------------------------------------------|
+|GET    | https://jsonplaceholder.typicode.com/posts  |
+|POST   | https://jsonplaceholder.typicode.com/posts  |
+|PUT    | https://jsonplaceholder.typicode.com/posts/1|
+|PATCH  | https://jsonplaceholder.typicode.com/posts/1|
+|DELETE | https://jsonplaceholder.typicode.com/posts/1|
 
 
 ## cURL CLI
@@ -35,8 +36,8 @@ Métodos/Verbos para endpoints:
 ### GET
 Obtém dados.
 
+**GET REQUEST**
 ```console
-#GET REQUEST
 👽@🐧:~$ curl https://jsonplaceholder.typicode.com/posts
 ```
 > `curl -i` para obter mais informações dos headers.
@@ -44,13 +45,13 @@ Obtém dados.
 ### POST
 Cria um novo recurso. Não é *non-idempotent*, o que significa que duas solicitações POST idênticas criarão dois novos recursos. 
 
+**POST Request**
 ```console
-#POST Request
 👽@🐧:~$ curl -X POST -d "userId=5&title=Um titulo qualquer&body=Um maravilhoso guia diga-se de passagem." https://jsonplaceholder.typicode.com/posts
 ```
 
+**POST Request (json)**
 ```console
-#POST Request (json)
 👽@🐧:~$ curl -X POST -H "Content-Type: application/json" -d '{"userId": 5, "title": "Um titulo qualquer", "body": "Um maravilhoso guia diga-se de passagem."}' https://jsonplaceholder.typicode.com/posts
 ```
 
@@ -58,34 +59,35 @@ Cria um novo recurso. Não é *non-idempotent*, o que significa que duas solicit
 Atualiza um recurso existente. É *idempotent*, o que significa que duas solicitações PUT idênticas modificarão o mesmo recurso. 
 Uma solicitação PUT requer que todo o corpo seja enviado; se algum dado estiver faltando, esses dados serão apagados (exceto valores automáticos como IDs de incremento automático, ID's e timestamps). 
 
+**PUT Request**
 ```console
-#PUT Request
 👽@🐧:~$ curl -X PUT -d "userId=1&title=Outro titulo&body=Um novo body" https://jsonplaceholder.typicode.com/posts/1
 ```
 
+**PUT Request (json)**
 ```console
-#PUT Request (json)
 👽@🐧:~$ curl -X PUT -H "Content-Type: application/json" -d '{"userId": 1, "title": "Outro titulo", "body": "Um novo body"}' https://jsonplaceholder.typicode.com/posts/1
 ```
 
 ### PATCH
 Atualiza um recurso existente e não requer o envio de todo o corpo com a solicitação. 
 
+**PATCH Request**
 ```console
 #PATCH Request
 👽@🐧:~$ curl -X PATCH -d "title='Mude so o titulo'" https://jsonplaceholder.typicode.com/posts/1
 ```
 
+**PATCH Request (json)**
 ```console
-#PATCH Request (json)
 👽@🐧:~$ curl -X PATCH -H "Content-Type: application/json" -d '{"title": "Mude so o titulo"}' https://jsonplaceholder.typicode.com/posts/1
 ```
 
 ### DELETE
 DELETE remove um recurso.
 
+**DELETE Request**
 ```console
-#DELETE Request
 👽@🐧:~$ curl -X DELETE https://jsonplaceholder.typicode.com/posts/1
 ```
 
