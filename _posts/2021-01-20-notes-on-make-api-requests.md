@@ -96,7 +96,7 @@ Se for preciso enviar headers adicionais, como `Authorization: Bearer` ou `x-jwt
 ```bash
 👽@🐧:~$ curl \
    -H "Content-Type: application/json" \
-   -H "Authorization: Bearer <JWT_TOKEN>"" \
+   -H "Authorization: Bearer <JWT_TOKEN>" \
    -H "x-jwt-assertion: <JWT_TOKEN>" \
    -X POST \
    -d '{"chave1": "valor1", "chave2": "valor2"}' \
