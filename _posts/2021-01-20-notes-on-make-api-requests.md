@@ -27,7 +27,7 @@ Métodos/Verbos para endpoints:
 
 
 ## cURL CLI
-
+Argumentos utilizados:
 - `-X --request` - Método request
 - `-d --data` - Envia os dados especificados
 - `-H --header` - Envia headers
