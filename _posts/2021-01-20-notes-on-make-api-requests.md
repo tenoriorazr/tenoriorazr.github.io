@@ -37,7 +37,7 @@ Métodos/Verbos para endpoints:
 Obtém dados.
 
 **GET REQUEST**
-```sh
+```bash
 👽@🐧:~$ curl https://jsonplaceholder.typicode.com/posts
 ```
 > `curl -i` para obter mais informações dos headers.
@@ -46,12 +46,12 @@ Obtém dados.
 Cria um novo recurso. Não é *non-idempotent*, o que significa que duas solicitações POST idênticas criarão dois novos recursos. 
 
 **POST Request**
-```sh
+```bash
 👽@🐧:~$ curl -X POST -d "userId=5&title=Um titulo qualquer&body=Um maravilhoso guia diga-se de passagem." https://jsonplaceholder.typicode.com/posts
 ```
 
 **POST Request (json)**
-```sh
+```bash
 👽@🐧:~$ curl -X POST -H "Content-Type: application/json" -d '{"userId": 5, "title": "Um titulo qualquer", "body": "Um maravilhoso guia diga-se de passagem."}' https://jsonplaceholder.typicode.com/posts
 ```
 
@@ -60,12 +60,12 @@ Atualiza um recurso existente. É *idempotent*, o que significa que duas solicit
 Uma solicitação PUT requer que todo o corpo seja enviado; se algum dado estiver faltando, esses dados serão apagados (exceto valores automáticos como IDs de incremento automático, ID's e timestamps). 
 
 **PUT Request**
-```sh
+```bash
 👽@🐧:~$ curl -X PUT -d "userId=1&title=Outro titulo&body=Um novo body" https://jsonplaceholder.typicode.com/posts/1
 ```
 
 **PUT Request (json)**
-```sh
+```bash
 👽@🐧:~$ curl -X PUT -H "Content-Type: application/json" -d '{"userId": 1, "title": "Outro titulo", "body": "Um novo body"}' https://jsonplaceholder.typicode.com/posts/1
 ```
 
@@ -73,13 +73,13 @@ Uma solicitação PUT requer que todo o corpo seja enviado; se algum dado estive
 Atualiza um recurso existente e não requer o envio de todo o corpo com a solicitação. 
 
 **PATCH Request**
-```sh
+```bash
 #PATCH Request
 👽@🐧:~$ curl -X PATCH -d "title='Mude so o titulo'" https://jsonplaceholder.typicode.com/posts/1
 ```
 
 **PATCH Request (json)**
-```sh
+```bash
 👽@🐧:~$ curl -X PATCH -H "Content-Type: application/json" -d '{"title": "Mude so o titulo"}' https://jsonplaceholder.typicode.com/posts/1
 ```
 
@@ -87,14 +87,14 @@ Atualiza um recurso existente e não requer o envio de todo o corpo com a solici
 DELETE remove um recurso.
 
 **DELETE Request**
-```sh
+```bash
 👽@🐧:~$ curl -X DELETE https://jsonplaceholder.typicode.com/posts/1
 ```
 
 ### Autenticação
 Se for preciso enviar headers adicionais, como `Authorization: Bearer` ou `x-jwt-assertion` para autenticação baseada em JWT, pode ser feito desta forma:
 
-```sh
+```bash
 👽@🐧:~$ curl \
    -H "Content-Type: application/json" \
    -H "Authorization: Bearer <JWT_TOKEN>"" \
