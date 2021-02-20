@@ -38,7 +38,7 @@ Obtém dados.
 
 **GET REQUEST**
 ```bash
-👽@🐧:~ curl https://jsonplaceholder.typicode.com/posts
+👽@🐧:~$ curl https://jsonplaceholder.typicode.com/posts
 ```
 > `curl -i` para obter mais informações dos headers.
 
