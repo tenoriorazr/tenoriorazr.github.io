@@ -74,7 +74,6 @@ Atualiza um recurso existente e não requer o envio de todo o corpo com a solici
 
 **PATCH Request**
 ```bash
-#PATCH Request
 👽@🐧:~$ curl -X PATCH -d "title='Mude so o titulo'" https://jsonplaceholder.typicode.com/posts/1
 ```
 
