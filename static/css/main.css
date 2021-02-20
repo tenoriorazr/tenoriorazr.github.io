@@ -87,7 +87,7 @@ table {
 
 table th,
 table td {
-  padding: 50px;
+  padding: 0.80rem;
   vertical-align: top;
   border-top: 1px solid #eceeef;
 }
