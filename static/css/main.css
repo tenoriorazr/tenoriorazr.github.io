@@ -100,7 +100,7 @@ table thead th {
 table tbody + tbody {
   border-top: 2px solid #eceeef;
 }
-
+/*
 .table .table {
   background-color: #fff;
 }
@@ -242,6 +242,7 @@ table tbody + tbody {
 .table-responsive.table-bordered {
   border: 0;
 }
+*/
 /*------------------------------*/
 /* Content */
 div.post-content {
