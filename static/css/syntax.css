@@ -49,9 +49,9 @@
 .highlight .sh { color: #92d192 } /* Literal.String.Heredoc */
 .highlight .si { color: #e6db74 } /* Literal.String.Interpol */
 .highlight .sx { color: #92d192 } /* Literal.String.Other #e6db74 */
-.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
-.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
-.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .sr { color: #92d192 } /* Literal.String.Regex #e6db74 */
+.highlight .s1 { color: #92d192 } /* Literal.String.Single #e6db74 */
+.highlight .ss { color: #92d192 } /* Literal.String.Symbol #e6db74 */
 .highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
 .highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
 .highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
