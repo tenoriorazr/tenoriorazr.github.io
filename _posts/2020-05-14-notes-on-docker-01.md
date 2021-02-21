@@ -11,7 +11,7 @@ A proposta desse guia é apresentar os conceitos mais básicos do docker para ut
 #### **Comandos**
 Abaixo os comandos utilizados neste guia:
 
-#### `docker run` Iniciando um novo container
+#### Iniciando um novo container - `docker run`
 `--name`: associa um nome para o container, `-v`: volume, `-d`: o container funciona em modo background, `sh -c` para instalar alguma coisa via shell. 
 ```bash
 🐋@🐧:~$ docker run --name [nome do container] -v [/host/volume/local]:[/container/armazenaraqui] --network [rede_exemplo] -p [host_ip]:[host_port]:[container_port] -d [nome da imagem, ex.: node:14.15-alpine3.10] sh -c "yarn install && yarn run dev"
@@ -20,54 +20,54 @@ Abaixo os comandos utilizados neste guia:
 
 > <sub>Dica: basicamente é o processo mais rápido e bagunçado para iniciar um container, uma alternativa melhor para isso é subir o container com docker-compose.</sub>
 
-#### `docker exec` Acessando o container
+#### Acessando o container - `docker exec`
 `-ti` para modo interativo, `-t` é do tty e `i` de interactive, mantém o STandarD INput aberto. `/bin/bash` se o container tiver o bash instalado.
 ```bash
 🐋@🐧:~$ docker exec -ti [id ou nome do container] /bin/bash
 ```
 
-#### `docker ps -a` Listando containers executados e parados. list all containers
+#### Listando containers executados e parados. *List all containers* - `docker ps -a`
 ```bash
 🐋@🐧:~$ docker ps -a
 ```
 
-#### `docker network ls` Listando as configurações de rede
+#### Listando as configurações de rede - `docker network ls`
 ```bash
 🐋@🐧:~$ docker network ls
 ```
 - Saber mais sobre [docker network](https://docs.docker.com/network/)
 
-#### `docker network rm` Apagando um configuração de rede
+#### Apagando um configuração de rede - `docker network rm`
 ```bash
 🐋@🐧:~$ docker network rm [id que representa a rede, ex.: usuario_default]
 ```
 
-#### `docker stop` Parando o container
+#### Parando o container - `docker stop`
 ```bash
 🐋@🐧:~$ docker stop [id ou nome do container]
 ```
 
-#### `docker rm` Apagando o container
+#### Apagando o container - `docker rm`
 ```bash
 🐋@🐧:~$ docker rm [id ou nome do container]
 ```
 
-#### `docker rmi` Apagando a imagem
+#### Apagando a imagem - `docker rmi`
 ```bash
 🐋@🐧:~$ docker rmi [id ou nome da imagem]
 ```
 
-#### `docker commit` Criando a imagem de um container existente
+#### Criando a imagem de um container existente - `docker commit`
 ```bash
 🐋@🐧:~$ docker commmit [id do container] imagemx:versao01
 ```
 
-#### `docker save` Salvando imagem em um arquivo .tar
+#### Salvando imagem em um arquivo .tar - `docker save`
 ```bash
 🐋@🐧:~$ docker save imagem:versao01 > /tmp/minha-imagem.tar
 ```
 
-#### `docker load` Importando imagem de um arquivo .tar
+#### Importando imagem de um arquivo .tar - `docker load`
 ```bash
 🐋@🐧:~$ docker load < minha-imagem.tar
 ```
