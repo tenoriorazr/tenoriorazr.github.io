@@ -229,8 +229,8 @@ else:
  
     **O arquivo:** a.txt **é igual ao** b.txt
     
-    **O hash do arquivo a.txt é**  0eb141a158107ab1396b50dd9be97e4cdb1b2514
-    **O hash do arquivo b.txt é**  0eb141a158107ab1396b50dd9be97e4cdb1b2514
+    **O hash do arquivo a.txt é**  0e1a1e972107abe4cdb1b1358dd9b96b50b14514
+    **O hash do arquivo b.txt é**  0e1a1e972107abe4cdb1b1358dd9b96b50b14514
     
 
 
