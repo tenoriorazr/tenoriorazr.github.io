@@ -14,7 +14,7 @@
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .kc { color: #66d9ef } /* Keyword.Constant */
 .highlight .kd { color: #66d9ef } /* Keyword.Declaration */
-.highlight .kn { color: #2c0645 } /* Keyword.Namespace #f92672*/
+.highlight .kn { color: #62cfcf } /* Keyword.Namespace #f92672*/
 .highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
 .highlight .kr { color: #66d9ef } /* Keyword.Reserved */
 .highlight .kt { color: #66d9ef } /* Keyword.Type */
@@ -57,3 +57,13 @@
 .highlight .vg { color: #62cfc8 } /* Name.Variable.Global #f8f8f2 */
 .highlight .vi { color: #62cfc8 } /* Name.Variable.Instance #f8f8f2 */
 .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+/*
+Legenda das cores:
+#62cfcf - ciano
+#66d9ef - outro ciano
+#b3b9c5 - azul cinzento
+#a6e22e - verde abacate
+#92d192 - verde string
+#f92672 - rosa
+*/
