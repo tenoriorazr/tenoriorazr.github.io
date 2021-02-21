@@ -83,7 +83,7 @@ Atualiza um recurso existente e não requer o envio de todo o corpo com a solici
 ```
 
 ### DELETE
-DELETE remove um recurso.
+Remove um recurso.
 
 **DELETE Request**
 ```bash
