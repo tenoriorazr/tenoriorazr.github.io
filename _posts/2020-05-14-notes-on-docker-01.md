@@ -18,7 +18,7 @@ Saber mais sobre [docker run](https://docs.docker.com/engine/reference/commandli
 
 > <sub>Dica: basicamente é o processo mais rápido e bagunçado para iniciar um container, uma alternativa melhor para isso é subir o container com docker-compose.</sub>
 
-####Acessando o container
+#### Acessando o container
 `-ti` para modo interativo, `-t` é do tty e `i` de interactive, mantém o STandarD INput aberto. `/bin/bash` se o container tiver o bash instalado.
 ```bash
 🐋@🐧:~$ docker exec -ti [id ou nome do container] /bin/bash
