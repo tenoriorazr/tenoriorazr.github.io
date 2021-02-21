@@ -743,7 +743,7 @@ blockquote {
   padding: 0 1em;
   color: var(--color-text-tertiary);
   font-size: 15px;
-  border-left: .25em solid var(--color-markdown-blockquote-border);
+  border-left: .25em solid #eee;
   margin: 0 0 20px;
   font-family: 'Helvetica Neue', sans-serif;
   color: #6a737d;
