@@ -31,6 +31,7 @@ Alguns especialistam também falam destes como princípios:
 - **Autorização**: Verificar se autoriza ou não a entidade dentro de um sistema.
 - **Não Repudio**: Evitar que uma entidade negue/manipule suas ações em um sistema. Monitorar ações desta entidade.
 
+
 ### 🐍 Bibliotecas Python
 
 - **os**: Fornece uma maneira simples de usar funcionalidades que são dependentes do SO, como por exemplo o ping.
@@ -153,7 +154,8 @@ finally:
     s.close()
 ```
 
-### Bibliotecas Python
+
+### 🐍 Bibliotecas Python
 
 - **random**: Implementa geradores de números pseudoaleatórios para várias distribuições.
 - **string**
