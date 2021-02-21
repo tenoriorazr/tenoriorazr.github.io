@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes sobre Docker"
+title:  "Basicamente Docker é isso"
 date:   2020-05-14 04:30:00 -0300
 categories: [docker, bash, linux]
 ---
