@@ -39,6 +39,7 @@ O S.O fornece a API socket que relaciona o programa com a rede, assim é possive
 - **pyfiglet**: Banners para os scripts.
 
 
+
 ```python
 import os, time, socket, sys 
 from pyfiglet import Figlet
@@ -158,6 +159,7 @@ finally:
 - **string**
 - **hashlib**: Implementa uma interface comum para muitos algoritmos de hash seguro como SHA1, SHA256, MD5 entre outros.
 - **ipaddress**
+
 
 
 ```python
