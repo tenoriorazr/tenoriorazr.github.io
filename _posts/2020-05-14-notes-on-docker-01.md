@@ -13,7 +13,7 @@ Abaixo os comandos utilizados neste guia:
 
 #### Iniciando um novo container - `docker run`
 `--name`: associa um nome para o container, `-v`: volume, `-d`: o container funciona em modo background, `sh -c` para instalar alguma coisa via shell. 
-```bash
+```console
 🐋@🐧:~$ docker run --name [nome do container] -v [/host/volume/local]:[/container/armazenaraqui] --network [rede_exemplo] -p [host_ip]:[host_port]:[container_port] -d [nome da imagem, ex.: node:14.15-alpine3.10] sh -c "yarn install && yarn run dev"
 ```
 - Saber mais sobre [docker run](https://docs.docker.com/engine/reference/commandline/run/)
