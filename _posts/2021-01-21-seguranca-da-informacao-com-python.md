@@ -151,10 +151,9 @@ finally:
 ### Bibliotecas Python
 
 - **random**: Implementa geradores de números pseudoaleatórios para várias distribuições.
-- **string**:
+- **string**
 - **hashlib**: Implementa uma interface comum para muitos algoritmos de hash seguro como SHA1, SHA256, MD5 entre outros.
-- **threading**:
-- **ipaddress**:
+- **ipaddress**
 
 
 ```python
@@ -260,15 +259,11 @@ print('\x1b[0;36m'+ "\nSHA512 de", string, '->'+'\x1b[0m', resultado.hexdigest()
      _  _ ____ ____ _  _   ____ ____ __ _ ____ ____ ____ ___ ____ ____
      |--| |--| ==== |--|   |__, |=== | \| |=== |--< |--|  |  [__] |--<
     
-    **Digite o texto a ser gerado:** Este é o Curso de Python para Segurança
-   
-    **MD5 de Este é o Curso de Python para Segurança ->** 17601d464793445d7403a095da523c16
-    
-    **SHA1 de Este é o Curso de Python para Segurança ->** ad5ba5453ba968a350fce77e25bc6d0607af1c06
-    
-    **SHA25 de Este é o Curso de Python para Segurança ->** ebff39ad58567f11fd75f0eed158854207ca4d0a5e140c08607f71910f86c3bf
-    
-    **SHA512 de Este é o Curso de Python para Segurança ->** 38fd01dba0c893355ecccf958504f632a9a8a97c41ec9912a8b2da692c0f335f4137d99bb7b7093bcc48868bba51cf7552a7a6ffc31fec3863d124b191ca9a15
+    Digite o texto a ser gerado: Segurança da Informação com Python
+    MD5 de Segurança da Informação com Python -> 81eac1d16a876935e3e731c9a2c5637e
+    SHA1 de Segurança da Informação com Python -> 2a28018e8d9e5c32ffd68424d195dada1d16bf2a
+    SHA25 de Segurança da Informação com Python -> d6300ea7f8b80c8cb06bb35943cf711cd750ce7791f98989c11edae468077bec
+    SHA512 de Segurança da Informação com Python -> 4ea198f47b4938e7d5ed0c1a599ac140ff3553259d744ee9797016073e7e395d0f915d8954a9d4769db2b71570df275290f808486f206bf5c78433798e780dad
     
 
 ```python
@@ -319,9 +314,14 @@ phone_number = phonenumbers.parse(phone)
 print(geocoder.description_for_number(phone_number, 'pt'))
 ```
 
-`Output:`
+`
+Output:
+
     Digite o telefone no formato +551140028922: +558240028922
     Maceió - AL
+`  
+
+
     
 
 
