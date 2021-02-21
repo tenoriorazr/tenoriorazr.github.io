@@ -33,7 +33,7 @@ span.time, span.categories {
   margin-bottom: 5px;
   font-size: 11px;
 }
-h1, h2, h3, h4 {
+h1, h2, h3 {
   //color: black;	
   //color: #696969;
   font-weight: normal;
@@ -43,11 +43,20 @@ h1 {
   margin-bottom: 10px;
   font-size: 30px;
 }
-h2, h3, h4 {
+h2, h3 {
   padding-top: 25px;
   padding-bottom: 20px;
   margin-bottom: 5px;
 }
+
+h4{
+	padding-top: 35px;
+	padding-bottom: 8px;
+	margin-bottom: 5px;
+	font-weight: 500;
+	font-family: Arvo;
+}
+
 h2 {font-size: 24px;}
 h2 {font-size: 18x;}
 a, a:link, a:active {
