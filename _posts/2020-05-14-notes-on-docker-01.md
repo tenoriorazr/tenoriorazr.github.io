@@ -88,7 +88,7 @@ services:
         OutraVáriavelpadrão: "${OUTRA VARIAVEL VINDO DO ARQUIVO .env}"
 ```
 
-#### Subindo container via docker-compose
+**Subindo container via docker-compose**
 ```bash
 🐋@🐧:~$ docker-compose up -d
 ```
