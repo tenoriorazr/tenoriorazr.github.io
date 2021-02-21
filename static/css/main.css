@@ -260,7 +260,8 @@ div.post-content {
 div.content pre {
   background: #333333;
   padding: 10px;
-  color: #FFF;
+  color: #b3b9c5;
+  /*color: #FFF;*/
   overflow-x: auto;
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 12px;
