@@ -9,63 +9,65 @@ categories: [docker, bash, linux]
 A proposta desse guia é apresentar os conceitos mais básicos do docker para utilização na real ou didático.
 
 #### **Comandos**
-#### Iniciando um novo container
+Abaixo os comandos utilizados neste guia:
+
+#### `docker run` Iniciando um novo container
 `--name`: associa um nome para o container, `-v`: volume, `-d`: o container funciona em modo background, `sh -c` para instalar alguma coisa via shell. 
 ```bash
 🐋@🐧:~$ docker run --name [nome do container] -v [/host/volume/local]:[/container/armazenaraqui] --network [rede_exemplo] -p [host_ip]:[host_port]:[container_port] -d [nome da imagem, ex.: node:14.15-alpine3.10] sh -c "yarn install && yarn run dev"
 ```
-> Saber mais sobre [docker run](https://docs.docker.com/engine/reference/commandline/run/)
+- Saber mais sobre [docker run](https://docs.docker.com/engine/reference/commandline/run/)
 
 > <sub>Dica: basicamente é o processo mais rápido e bagunçado para iniciar um container, uma alternativa melhor para isso é subir o container com docker-compose.</sub>
 
-#### Acessando o container
+#### `docker exec` Acessando o container
 `-ti` para modo interativo, `-t` é do tty e `i` de interactive, mantém o STandarD INput aberto. `/bin/bash` se o container tiver o bash instalado.
 ```bash
 🐋@🐧:~$ docker exec -ti [id ou nome do container] /bin/bash
 ```
 
-#### Listando containers executados e parados. list all containers
+#### `docker ps -a` Listando containers executados e parados. list all containers
 ```bash
 🐋@🐧:~$ docker ps -a
 ```
 
-#### Listando as configurações de rede
+#### `docker network ls` Listando as configurações de rede
 ```bash
 🐋@🐧:~$ docker network ls
 ```
-> Saber mais sobre [docker network](https://docs.docker.com/network/)
+- Saber mais sobre [docker network](https://docs.docker.com/network/)
 
-#### Apagando um configuração de rede
+#### `docker network rm` Apagando um configuração de rede
 ```bash
 🐋@🐧:~$ docker network rm [id que representa a rede, ex.: usuario_default]
 ```
 
-#### Parando o container
+#### `docker stop` Parando o container
 ```bash
 🐋@🐧:~$ docker stop [id ou nome do container]
 ```
 
-#### Apagando o container
+#### `docker rm` Apagando o container
 ```bash
 🐋@🐧:~$ docker rm [id ou nome do container]
 ```
 
-#### Apagando a imagem
+#### `docker rmi` Apagando a imagem
 ```bash
 🐋@🐧:~$ docker rmi [id ou nome da imagem]
 ```
 
-#### Criando a imagem de um container existente
+#### `docker commit` Criando a imagem de um container existente
 ```bash
 🐋@🐧:~$ docker commmit [id do container] imagemx:versao01
 ```
 
-#### Salvando imagem em um arquivo .tar
+#### `docker save` Salvando imagem em um arquivo .tar
 ```bash
 🐋@🐧:~$ docker save imagem:versao01 > /tmp/minha-imagem.tar
 ```
 
-#### Importando imagem de um arquivo .tar
+#### `docker load` Importando imagem de um arquivo .tar
 ```bash
 🐋@🐧:~$ docker load < minha-imagem.tar
 ```
@@ -92,17 +94,17 @@ services:
 ```bash
 🐋@🐧:~$ docker-compose up -d
 ```
-Saber mais sobre [docker-compose](https://docs.docker.com/get-started/08_using_compose/)
+- Saber mais sobre [docker-compose](https://docs.docker.com/get-started/08_using_compose/)
 
 ## Dockerfile
-Basicamente o arquivo `Dockerfile` é isso:
+Basicamente o arquivo `Dockerfile` é composto com essas tags:
 
 - ```FROM``` - Cria uma camada da imagem Docker.
 - ```COPY``` - Copia arquivos do Docker client local.
 - ```RUN``` - Uma forma de shell, o comando é executado em um shell, que por padrão é /bin/sh -c no Linux ou cmd/S/C no Windows). ```RUN [" executável "," parametro1 "," parametro2 "]``` (exec) A instrução executará quaisquer comandos em uma nova layer sobre a imagem atual e commita os resultados. A imagem commitada será usada na próxima etapa do Dockerfile.
 - ```CMD``` - Especifica o comando a ser executado no contêiner.
 
-> Boas práticas para escrever Dockerfiles: [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- Boas práticas para escrever Dockerfiles: [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
 ## docker-compose e Dockerfile
 Um projeto em diretório local configurado para ser *conteinerizado* via DOCKERFILE sendo executado via docker-compose.
