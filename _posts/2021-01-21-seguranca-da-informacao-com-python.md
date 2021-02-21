@@ -7,6 +7,14 @@ categories: [linux, python, segurança da informação]
 
 <sub>Página gerada do Jupyter Notebook, [este aqui](https://github.com/evttenorio/infosec-py).</sub>
 
+
+&nbsp;
+
+
+&nbsp;
+
+
+### 🕵️ **Segurança da Informação**
 > Área que tem como objetivo asssegurar que todos os dados de uma ou mais informações 
 estejam sempre CONFIDENCIAIS, INTEGROS E DISPONIVEIS em qualquer meio de comunicação.
 
@@ -23,8 +31,7 @@ Alguns especialistam também falam destes como princípios:
 - **Autorização**: Verificar se autoriza ou não a entidade dentro de um sistema.
 - **Não Repudio**: Evitar que uma entidade negue/manipule suas ações em um sistema. Monitorar ações desta entidade.
 
-
-### Bibliotecas Python
+### 🐍 Bibliotecas Python
 
 - **os**: Fornece uma maneira simples de usar funcionalidades que são dependentes do SO, como por exemplo o ping.
 - **time**: Fornece várias funçoes relacionadas ao tempo, como por exemplo tempo de execução de um código.
