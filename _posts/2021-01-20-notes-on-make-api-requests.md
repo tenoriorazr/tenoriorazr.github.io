@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notas sobre como fazer solicitações à API's por linha de comando via cURL"
+title:  "Como fazer solicitações à API's por linha de comando via cURL"
 date:   2021-01-20 08:30:00 -0300
 categories: [linux, shell script, bash]
 ---
