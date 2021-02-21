@@ -11,9 +11,6 @@ categories: [linux, python, segurança da informação]
 &nbsp;
 
 
-&nbsp;
-
-
 ### 🕵️ **Segurança da Informação**
 > Área que tem como objetivo asssegurar que todos os dados de uma ou mais informações 
 estejam sempre CONFIDENCIAIS, INTEGROS E DISPONIVEIS em qualquer meio de comunicação.
