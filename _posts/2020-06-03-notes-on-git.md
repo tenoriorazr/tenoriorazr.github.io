@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notas sobre git"
+title:  "Basicamente git é isso"
 date:   2020-06-03 08:30:00 -0300
 categories: [git]
 ---
