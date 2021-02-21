@@ -5,11 +5,9 @@ date:   2021-01-21 03:30:00 -0300
 categories: [linux, python, segurança da informação]
 ---
 
-## Segurança da Informação com Python
+<sub>Página gerada do Jupyter Notebook, [este aqui](https://github.com/evttenorio/infosec-py).</sub>
 
-<sub>Página gerada de um arquivo do Jupyter Notebook, [este aqui](https://github.com/evttenorio/infosec-py).</sub>
-
->Área que tem como objetivo asssegurar que todos os dados de uma ou mais informações 
+> Área que tem como objetivo asssegurar que todos os dados de uma ou mais informações 
 estejam sempre CONFIDENCIAIS, INTEGROS E DISPONIVEIS em qualquer meio de comunicação.
 
 ### Princípios da Segurança da Informação
@@ -317,9 +315,3 @@ print(geocoder.description_for_number(phone_number, 'pt'))
     Digite o telefone no formato +551140028922: +558240028922
     Maceió - AL
     
-  
-
-
-    
-
-
