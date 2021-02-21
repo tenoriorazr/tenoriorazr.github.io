@@ -4,7 +4,6 @@ title:  "Notes sobre Docker"
 date:   2020-05-14 04:30:00 -0300
 categories: [docker, bash, linux]
 ---
----
 
 ## 🐋 O básico do Docker
 A proposta desse guia é apresentar os conceitos mais básicos do docker para utilização na real ou didático.
