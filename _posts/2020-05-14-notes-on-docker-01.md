@@ -8,13 +8,13 @@ categories: [docker, bash, linux]
 ## 🐋 O básico do Docker
 A proposta desse guia é apresentar os conceitos mais básicos do docker para utilização na real ou didático.
 
-### Comandos
+#### **Comandos**
 #### Iniciando um novo container
 `--name`: associa um nome para o container, `-v`: volume, `-d`: o container funciona em modo background, `sh -c` para instalar alguma coisa via shell. 
 ```bash
 🐋@🐧:~$ docker run --name [nome do container] -v [/host/volume/local]:[/container/armazenaraqui] --network [rede_exemplo] -p [host_ip]:[host_port]:[container_port] -d [nome da imagem, ex.: node:14.15-alpine3.10] sh -c "yarn install && yarn run dev"
 ```
-Saber mais sobre [docker run](https://docs.docker.com/engine/reference/commandline/run/)
+> Saber mais sobre [docker run](https://docs.docker.com/engine/reference/commandline/run/)
 
 > <sub>Dica: basicamente é o processo mais rápido e bagunçado para iniciar um container, uma alternativa melhor para isso é subir o container com docker-compose.</sub>
 
@@ -33,7 +33,7 @@ Saber mais sobre [docker run](https://docs.docker.com/engine/reference/commandli
 ```bash
 🐋@🐧:~$ docker network ls
 ```
-Saber mais sobre [docker network](https://docs.docker.com/network/)
+> Saber mais sobre [docker network](https://docs.docker.com/network/)
 
 #### Apagando um configuração de rede
 ```bash
@@ -102,7 +102,7 @@ Basicamente o arquivo `Dockerfile` é isso:
 - ```RUN``` - Uma forma de shell, o comando é executado em um shell, que por padrão é /bin/sh -c no Linux ou cmd/S/C no Windows). ```RUN [" executável "," parametro1 "," parametro2 "]``` (exec) A instrução executará quaisquer comandos em uma nova layer sobre a imagem atual e commita os resultados. A imagem commitada será usada na próxima etapa do Dockerfile.
 - ```CMD``` - Especifica o comando a ser executado no contêiner.
 
-Boas práticas para escrever Dockerfiles: [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+> Boas práticas para escrever Dockerfiles: [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
 ## docker-compose e Dockerfile
 Um projeto em diretório local configurado para ser *conteinerizado* via DOCKERFILE sendo executado via docker-compose.
