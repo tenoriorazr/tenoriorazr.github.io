@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notas sobre emojis no bash 👽"
+title:  "Emojis no bash 👽"
 date:   2020-05-16 02:40:00 -0300
 categories: [linux, scripts]
 ---
