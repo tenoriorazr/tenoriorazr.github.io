@@ -24,7 +24,7 @@ rsync --delete --backup-dir="$LIXEIRA/$DATA" -raAXtuv $DIR $DIRB
 
 Ao ser executado, uma nova pasta é criada com o backup do diretório de origem. 
 
-Se o script estiver full-time no crontab e algum arquivo da pasta de origem seja deletado, 
+> Se o script estiver full-time no crontab e algum arquivo da pasta de origem seja deletado, 
 tal arquivo irá para uma pasta que funciona como uma lixeira, 
 desse modo não há preocupação com exclusão de arquivos enquanto o sript está em execução.
 
@@ -34,7 +34,7 @@ desse modo não há preocupação com exclusão de arquivos enquanto o sript est
 $ crontab -e
 ```
 
-#### Editando
+**Editando**
 
 ```bash
 # Select shell mode
