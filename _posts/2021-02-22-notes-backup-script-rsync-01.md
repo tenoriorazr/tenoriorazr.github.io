@@ -6,6 +6,9 @@ categories: [scripts, linux, bash, rsync, backup]
 ---
 
 
+&nbsp;
+
+
 ```sh
 #!/bin/bash
 # autor: evttenorio
