@@ -28,8 +28,10 @@ Alguns especialistam também falam destes como princípios:
 - **Autorização**: Verificar se autoriza ou não a entidade dentro de um sistema.
 - **Não Repudio**: Evitar que uma entidade negue/manipule suas ações em um sistema. Monitorar ações desta entidade.
 
+### 🐍 **Python**
+Linguagem de alto nível 
 
-### 🐍 Bibliotecas Python
+#### Bibliotecas Python
 
 - **os**: Fornece uma maneira simples de usar funcionalidades que são dependentes do SO, como por exemplo o ping.
 - **time**: Fornece várias funçoes relacionadas ao tempo, como por exemplo tempo de execução de um código.
@@ -153,20 +155,19 @@ finally:
 ```
 
 
-### 🐍 Bibliotecas Python
+#### Bibliotecas Python
 
 - **random**: Implementa geradores de números pseudoaleatórios para várias distribuições.
-- **string**
+- **string**: Conjunto de funções para manipular strings
 - **hashlib**: Implementa uma interface comum para muitos algoritmos de hash seguro como SHA1, SHA256, MD5 entre outros.
-- **ipaddress**
-
+- **ipaddress**: Fornece recursos para criar, manipular e operar em endereços e redes IPv4 e IPv6.
 
 
 ```python
 import random, string, hashlib, ipaddress, time
-from threading import Thread
 ```
 
+#### Gerador de senhas seguras
 A biblioteca random é utilizada na ferramenta Pwd Generator para randomizar letras e números para que a cada execução gere resultados aleatórios. 
 
 Contemplando os princípios de **AUTENTICAÇÃO** na medida que há um crendenciamento via senha e **CONFIDENCIALIDADE** por manter uma informação confidencial através de uma autenticação.
@@ -271,7 +272,7 @@ print('\x1b[0;36m'+ "\nSHA512 de", string, '->'+'\x1b[0m', resultado.hexdigest()
     SHA25 de Segurança da Informação com Python -> d6300ea7f8b80c8cb06bb35943cf711cd750ce7791f98989c11edae468077bec
     SHA512 de Segurança da Informação com Python -> 4ea198f47b4938e7d5ed0c1a599ac140ff3553259d744ee9797016073e7e395d0f915d8954a9d4769db2b71570df275290f808486f206bf5c78433798e780dad
     
-
+#### Cálculo de rede com ipaddress
 ```python
 ip = "172.16.17.0/24"
 
@@ -290,8 +291,8 @@ for ip in rede:
         ...
     172.16.17.255
     
-
-
+#### Mini-nmap
+Descobrir se um determinado host possui portas abertas. Contempla o princípio de **CONFIDENCIALIDADE**, no qual há uma necessidade de manter confidencial um serviço de rede. E possivelmente o princípio de **DISPONIBILIDADE**, para descobrir se um ou mais serviços estão ativos. 
 ```python
 ports = [21,22,23,443,80,8080]
 
@@ -309,7 +310,7 @@ for port in ports:
     443 OPEN
     80 OPEN
     
-
+<!---
 ```python
 import phonenumbers
 from phonenumbers import geocoder
@@ -322,3 +323,4 @@ print(geocoder.description_for_number(phone_number, 'pt'))
 
     Digite o telefone no formato +551140028922: +558240028922
     Maceió - AL
+--->
