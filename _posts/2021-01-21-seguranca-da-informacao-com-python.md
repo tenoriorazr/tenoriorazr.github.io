@@ -29,7 +29,7 @@ Alguns especialistam também falam destes como princípios:
 - **Não Repudio**: Evitar que uma entidade negue/manipule suas ações em um sistema. Monitorar ações desta entidade.
 
 ### 🐍 **Python**
-Linguagem de alto nível 
+Linguagem de alto nível bastante utilizada por profissionais da segurança, desenvolvedores e cientista de dados, possui diversas bibliotecas que ajudam a manipular ações no S.O, redes e etc.
 
 #### Bibliotecas Python
 
