@@ -24,9 +24,13 @@ rsync --delete --backup-dir="$LIXEIRA/$DATA" -raAXtuv $DIR $DIRB
 
 Ao ser executado, uma nova pasta é criada com o backup do diretório de origem. 
 
-> Se o script estiver full-time no crontab e algum arquivo da pasta de origem seja deletado, 
-tal arquivo irá para uma pasta que funciona como uma lixeira, 
-desse modo não há preocupação com exclusão de arquivos enquanto o sript está em execução.
+Sem preocupações com exclusão de arquivos enquanto o sript está em execução. 
+Se algum arquivo da pasta de origem for deletado, tal arquivo irá para uma pasta que funciona como lixeira(recoverbackupfiles). 
+
+Em *recoverbackupfiles* os arquivos deletados da pasta de origem estão organizados por mês. 
+Alterando a formatação da variável `DATA` é possível ter uma organização diferente de quando os arquivos foram deletados.
+
+
 
 #### Add no cronjobs
 
