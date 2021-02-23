@@ -12,8 +12,8 @@ categories: [scripts, linux, bash, rsync, backup]
 
 ```py
 # Python-Script
-# script-name: backup-rsync-01.py
-# autor: evttenorio
+# Script-name: backup-rsync-01.py
+# Autor: evttenorio
 import os, subprocess
 
 DIR="/home/usuario/meusarquivos" # DIRETÓRIO DE ORIGEM
@@ -37,8 +37,8 @@ if __name__ == "__main__":
 
 ```sh
 #!/bin/bash
-# script-name: backup-rsync-01.sh
-# autor: evttenorio
+# Script-name: backup-rsync-01.sh
+# Autor: evttenorio
 
 DIR=/home/usuario/meusarquivos # DIRETÓRIO DE ORIGEM
 DIRB=/home/usuario/backupmeusarquivos # DIRETÓRIO DE BACKUP
