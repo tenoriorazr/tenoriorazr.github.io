@@ -11,10 +11,10 @@ categories: [scripts, linux, bash, rsync, backup]
 ### Python
 
 ```py
-#  Python-Script
+# Python-Script
 # script-name: backup-rsync-01.py
 # autor: evttenorio
-import os, subprocess, time
+import os, subprocess
 
 DIR="/home/usuario/meusarquivos" # DIRETÓRIO DE ORIGEM
 DIRB="/home/usuario/backupmeusarquivos" # DIRETÓRIO DE BACKUP
