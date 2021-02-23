@@ -8,6 +8,34 @@ categories: [scripts, linux, bash, rsync, backup]
 
 &nbsp;
 
+### Python
+
+```py
+#  Python-Script
+# script-name: backup-rsync-01.py
+# autor: evttenorio
+import os, subprocess, time
+
+DIR="/home/usuario/meusarquivos" # DIRETÓRIO DE ORIGEM
+DIRB="/home/usuario/backupmeusarquivos" # DIRETÓRIO DE BACKUP
+LIXEIRA="/home/usuario/recoverbackupfiles"
+x=str(subprocess.check_output(['date','+%B/%d-%m-%Y--%Hh']))
+DATA = x.replace("'","").replace("b","").replace("\\n","")
+MIRROR = (LIXEIRA+"/"+DATA)
+
+def main():
+    #print ('\x1b[1;36m RSYNC [verbose-mode]\x1b[0m')
+    print ('\U00002796' * 40)
+    rsync = ('rsync --delete --backup-dir='+MIRROR+' -raAXtuv '+DIR+' '+DIRB)
+    os.system(rsync)
+
+if __name__ == "__main__":
+    main()
+```
+
+**ou**
+
+### Shell-Script
 
 ```sh
 #!/bin/bash
@@ -19,7 +47,7 @@ DIRB=/home/usuario/backupmeusarquivos # DIRETÓRIO DE BACKUP
 LIXEIRA=/home/usuario/recoverbackupfiles
 DATA=`date +%B/%d-%m-%Y--%Hh`
 
-echo $'\e[1;36m\U1F504 RSYNC [verbose-mode]\e[0m'
+#echo $'\e[1;36m\U1F504 RSYNC [verbose-mode]\e[0m'
 rsync --delete --backup-dir="$LIXEIRA/$DATA" -raAXtuv $DIR $DIRB
 ```
 
@@ -31,19 +59,6 @@ Se algum arquivo da pasta de origem for deletado, tal arquivo irá para uma past
 Em *recoverbackupfiles* os arquivos deletados da pasta de origem estão organizados por mês e por hora. 
 Alterando a formatação da variável `DATA` é possível ter uma organização diferente de quando os arquivos foram deletados.
 
-
-#### Script em loop `loopbackup.sh`
-
-```sh
-#!/bin/bash
-# script-name: loopbackup.sh
-# autor: evttenorio
-
-while :; do
-  /home/usuario/backup-rsync-01.sh&
-  sleep 1
-done
-```
 
 #### Add no cronjobs
 
@@ -59,5 +74,6 @@ $ crontab -e
 ...
 
 # sync the folders for every hours, for more: https://crontab.guru/every-1-hour
-* * * * * /home/usuario/loopbackup.sh > /home/usuario/logbackup/loopbackup.log 2>&1
+* * * * * /usr/bin/python3 /home/usuario/backup-rsync-01.py > /home/usuario/logbackup/loopbackup.log 2>&1
+* * * * * /home/usuario/backup-rsync-01.sh > /home/usuario/logbackup/loopbackup.log 2>&1
 ```
