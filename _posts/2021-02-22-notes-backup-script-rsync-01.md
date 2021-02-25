@@ -57,7 +57,7 @@ Se algum arquivo da pasta de origem for deletado, tal arquivo irá para uma past
 Em *recoverbackupfiles* os arquivos deletados da pasta de origem estão organizados por mês e por hora. 
 Alterando a formatação da variável `DATA` é possível ter uma organização diferente de quando os arquivos foram deletados.
 
-**Sobre os parâmetros**
+#### Parâmetros
 `rsync --delete --backup-dir= ... -raAXtuv` [Explicação detalhada dos parâmetros no explainshell.com](https://explainshell.com/explain?cmd=rsync+--delete+--backup-dir+-r+-a+-A+-X+-t+-u+-v)
 
 #### Add no cronjobs
