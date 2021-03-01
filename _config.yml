@@ -17,8 +17,8 @@ collections:
 social:
 #    - icon: fa-linkedin
 #     link: "#"
-#   - icon: fa-github
-#     link: "#"
+   - icon: fa-github
+     link: "https://github.com/evttenorio"
 #    - icon: fa-facebook
 #      link: "#"
 #    - icon: fa-twitter
