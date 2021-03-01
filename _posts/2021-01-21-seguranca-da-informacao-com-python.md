@@ -5,8 +5,6 @@ date:   2021-01-21 03:30:00 -0300
 categories: [linux, python, segurança da informação]
 ---
 
-<sub>Página gerada do Jupyter Notebook, [este aqui](https://github.com/evttenorio/infosec_python).</sub>
-
 
 &nbsp;
 
