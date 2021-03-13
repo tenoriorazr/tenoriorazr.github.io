@@ -30,4 +30,4 @@ De repente até estelionato pode ser um dos riscos.
 A solução para a galera ficar safe pagando pouco é não assistir tv mesmo kkkk, okay, a solução mesmo é trabalhosa e isso abre precedentes não somente na implementação de segurança nas empresas mas também em redes domésticas, no qual eu acredito que 
 sistemas de firewall, vlans e etc são serviços de redes que devem ajudar a Dona Maria ou o vascaíno João consumir IPTV e outras tecnologias de forma tranquila e segura.
 
-Espero que esse post possa motivar seus estudos em IPTV ou segurança de SecInfo também.
+Espero que esse post possa motivar seus estudos em IPTV ou segurança também.
